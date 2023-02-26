@@ -96,8 +96,6 @@ export default function Home() {
       const _numberOfWhitelisted =
         await whitelistContract.numAddressWhitelisted();
       setNumberOfWhitelisted(_numberOfWhitelisted);
-      console.log(`Number of Whitelisted local is ${_numberOfWhitelisted}`)
-      console.log(`Number of Whitelisted state is ${numberOfWhitelisted}`)
     } catch (err) {
       console.error(err);
     }
